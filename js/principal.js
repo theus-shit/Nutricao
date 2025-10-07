@@ -5,7 +5,7 @@ titulo.textContent=("plk nutricao");
 
 var paciente = document.querySelector("#primeiro-paciente");
 var tdNome = document.querySelector(".info-nome")
-var nome = tdNome.textContent
+var nome = tdNome.textContent;
 console.log(nome);
 
 var tdPeso = document.querySelector(".info-peso")
@@ -16,3 +16,6 @@ console.log(peso);
 var tdAltura = document.querySelector(".info-altura")
 var altura = tdAltura.textContent;
 console.log(altura);
+
+var imc = peso / (altura * altura;)
+console.log(imc);
