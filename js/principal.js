@@ -8,12 +8,12 @@ var tdNome = document.querySelector(".info-nome")
 var nome = tdNome.textContent;
 console.log(nome);
 
-var tdPeso = document.querySelector(".info-peso")
+var tdPeso = document.querySelector(".info-peso");
 var peso = tdPeso.textContent;
 console.log(peso);
 
 // 07/ 10/2025
-var tdAltura = document.querySelector(".info-altura")
+var tdAltura = document.querySelector(".info-altura");
 var altura = tdAltura.textContent;
 console.log(altura);
 
