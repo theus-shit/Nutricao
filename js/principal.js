@@ -4,9 +4,12 @@ console.log(titulo.textContent);
 titulo.textContent=("plk nutricao");
 
 var paciente = document.querySelector("#primeiro-paciente");
+
+
+console.log(nome);
+
 var tdPeso = document.querySelector(".info-peso")
 var peso = tdPeso.textContent;
-console.log(paciente);
 console.log(peso);
 
 // 07/ 10/2025
