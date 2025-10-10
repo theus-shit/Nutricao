@@ -35,9 +35,9 @@ if (peso <0||peso> 1000) {
 }
 
 if (altura <0||altura> 3.00){
-    console.log("Altura inaválida!")
+    console.log("Altura inválida!")
     alturaEhValido = false;
-    tdlmc.textContent=("Altura inválida!");
+    tdImc.textContent= "Altura inválida!";
 }
 
 if(alturaEhValida && pesoEhValido){
