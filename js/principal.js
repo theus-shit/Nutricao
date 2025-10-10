@@ -1,7 +1,7 @@
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent=("plk nutricao");
+titulo.textContent=("pinpin nutricao");
 
 var paciente = document.querySelector("#primeiro-paciente");
 var tdNome = document.querySelector(".info-nome")
@@ -20,3 +20,16 @@ var tdImc = paciente.querySelector(".info-imc");
 var imc = peso / (altura * altura);
 tdImc.textContent = imc;
 console.log(imc);
+
+if (peso <0||peso> 1000) {
+    console.log("Peso inválido")
+    pesoEhValido = false;
+}
+
+if (altura <0||altura> 3.00){
+    console.log("Altura inaválida!")
+    alturaEhValido = false;
+}
+
+var pesoEhValido = true;
+var alturaEhValido = true;
