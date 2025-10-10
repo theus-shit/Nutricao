@@ -41,6 +41,6 @@ if (altura <0||altura>=3.00){
 }
 
 if(alturaEhValido && pesoEhValido){
-    var imc=peso / (altura * altura);
+    var imc = peso / (altura * altura);
     tdImc.textContent = imc;
 }
