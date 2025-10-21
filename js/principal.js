@@ -3,24 +3,20 @@ console.log(titulo);
 console.log(titulo.textContent);
 titulo.textContent=("pinpin nutricao");
 
-var paciente = document.querySelector("#primeiro-paciente");
-var tdNome = document.querySelector(".info-nome")
-var nome = tdNome.textContent;
-console.log(nome);
+var paciente = paciente.querySelectorAll(".paciente");
 
-var tdPeso = document.querySelector(".info-peso");
+for (var i=0; i <pacientes.length; i++){
+
+    var paciente = pacientes[i];
+
+
+var tdPeso = paciente.querySelector(".info-peso");
 var peso = tdPeso.textContent;
-console.log(peso);
 
-var tdAltura = document.querySelector(".info-altura");
+var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;
-console.log(altura);
 
 var tdImc = paciente.querySelector(".info-imc");
-var imc = peso / (altura * altura);
-tdImc.textContent = imc;
-console.log(imc);
-
 
 // 10/10
 
@@ -43,4 +39,5 @@ if (altura <=0||altura>=3.00){
 if(alturaEhValida && pesoEhValido){
     var imc = peso / (altura * altura);
     tdImc.textContent = imc;
+}
 }
