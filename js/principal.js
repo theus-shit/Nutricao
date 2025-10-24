@@ -43,3 +43,8 @@ if(alturaEhValida && pesoEhValido){
     tdImc.textContent = imc.toFixed(2);
 }
 }
+
+titulo.addEventListener("click", mostraMensagem);
+function mostraMensagem(){
+    alert("Olá eu fui clicado.")
+}
