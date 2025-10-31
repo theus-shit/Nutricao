@@ -47,4 +47,23 @@ if(alturaEhValida && pesoEhValido){
 titulo.addEventListener("click", mostraMensagem);
 function mostraMensagem(){
     alert("Olá eu fui clicado.")
+
+var nome = from.nome.value;
+var peso = from.peso.value;
+var altura = from.altura.value;
+var gordura = from.gordura.value;
+
+var pacienteTr = document.createElement("tr");
+
+var nomeTd = document.createElement("td");
+var pesoTd = document.createElement("td");
+var alturaTd = document.createElement("td");
+var gorduraTd = document.createElement("td");
+var imcTd = document.createElement("td");
+
+nomeTd.textContent = nome;
+pesoTd.textContent = peso;
+alturaTd.textContent = altura;
+gorduraTd.textContent = gordura;
+
 }
