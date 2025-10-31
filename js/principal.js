@@ -47,6 +47,14 @@ if(alturaEhValida && pesoEhValido){
 titulo.addEventListener("click", mostraMensagem);
 function mostraMensagem(){
     alert("Olá eu fui clicado.")
+}
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("cliclk", function(event){
+event.preventDefault();
+alert("Oi eu sou o botao e fui clicado");
+var form = document.querySelector("#form-adiciona");
+
 
 var nome = from.nome.value;
 var peso = from.peso.value;
@@ -66,4 +74,12 @@ pesoTd.textContent = peso;
 alturaTd.textContent = altura;
 gorduraTd.textContent = gordura;
 
-}
+pacienteTr.appendChild(nomeTd);
+pacienteTr.appendChild(pesoTd);
+pacienteTr.appendChild(alturaTd);
+pacienteTr.appendChild(gorduraTd);
+
+var tabela = document.querySelector("#tabela-pacientes");
+tabela.appendChild(pacienteTr);
+});
+
