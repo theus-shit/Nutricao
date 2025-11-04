@@ -3,7 +3,7 @@ console.log(titulo);
 console.log(titulo.textContent);
 titulo.textContent=("pinpin nutricao");
 
-var pacientes = document.querySelectorAll(".pacientes");
+var pacientes = document.querySelectorAll(".paciente");
 
 for (var i=0; i <= pacientes.length; i++){
 
@@ -12,12 +12,11 @@ var paciente = pacientes[i];
 
 var tdPeso = paciente.querySelector(".info-peso");
 var peso = tdPeso.textContent;
-console.log(peso)
 
 var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;
 
-var tdImc = paciente.querySelectfunctionor(".info-imc");
+var tdImc = paciente.querySelector(".info-imc");
 
 // 10/10
 
