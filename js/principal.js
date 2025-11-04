@@ -17,7 +17,7 @@ console.log(peso)
 var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;
 
-var tdImc = paciente.querySelector(".info-imc");
+var tdImc = paciente.querySelectfunctionor(".info-imc");
 
 // 10/10
 
@@ -45,16 +45,12 @@ if(alturaEhValida && pesoEhValido){
 }
 }
 
-
-titulo.addEventListener("click", mostraMensagem);
-function mostraMensagem(){
-    alert("Olá eu fui clicado.")
-}
-
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event){
+
 event.preventDefault();
 alert("Oi eu sou o botao e fui clicado");
+
 var form = document.querySelector("#form-adiciona");
 
 
