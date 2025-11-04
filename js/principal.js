@@ -12,6 +12,7 @@ for (var i=0; i <pacientes.length; i++){
 
 var tdPeso = paciente.querySelector(".info-peso");
 var peso = tdPeso.textContent;
+console.log(peso)
 
 var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;
@@ -43,6 +44,7 @@ if(alturaEhValida && pesoEhValido){
     tdImc.textContent = imc.toFixed(2);
 }
 }
+
 
 titulo.addEventListener("click", mostraMensagem);
 function mostraMensagem(){
