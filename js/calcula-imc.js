@@ -38,8 +38,14 @@ if (altura <=0||altura>=3.00){
 }
 
 if(alturaEhValida && pesoEhValido){
-    var imc = peso / (altura * altura);
+    var imc = calculaImc (peso, altura);
     tdImc.textContent = imc.toFixed(2);
 }
+}
+
+function calculaImc (peso, altura) {
+    var imc = 0;
+    var imc = peso / (altura * altura);
+    return imc.toFixed(2);
 }
 
